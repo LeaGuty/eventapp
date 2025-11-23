@@ -1,16 +1,41 @@
-# React + Vite
+# EventApp - Proyecto de Práctica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con **React** y **Vite**, diseñada específicamente para practicar la integración de un Frontend con servicios de Backend.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El objetivo principal de esta aplicación es simular un entorno real de desarrollo donde el frontend consume datos de diferentes APIs. Para fines de práctica y desarrollo autónomo, se utiliza **MSW (Mock Service Worker)** para interceptar las peticiones de red y devolver datos simulados, permitiendo trabajar sin un backend real desplegado.
 
-## React Compiler
+## Características Principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Integración Frontend-Backend Simulada**:
+  - **REST API**: Consumo de lista de eventos.
+  - **GraphQL API**: Consumo de detalles específicos de cada evento.
+  - **Simulación de Latencia**: Los servicios mockeados incluyen un retardo artificial para probar estados de carga (loading states).
 
-## Expanding the ESLint configuration
+- **Tecnologías Utilizadas**:
+  - **React**: Biblioteca principal de UI.
+  - **Vite**: Entorno de desarrollo y empaquetador.
+  - **Tailwind CSS**: Estilizado moderno y responsivo (diseño "Glassmorphism").
+  - **React Router**: Manejo de navegación y rutas.
+  - **MSW (Mock Service Worker)**: Mocking de APIs a nivel de red.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación y Ejecución
+
+1.  Clonar el repositorio.
+2.  Instalar dependencias:
+    ```bash
+    npm install
+    ```
+3.  Iniciar el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+4.  Abrir `http://localhost:5173` en el navegador.
+
+## Estructura del Proyecto
+
+- `src/components`: Componentes reutilizables (Layout, etc.).
+- `src/pages`: Vistas principales (Lista de Eventos, Detalle).
+- `src/services`: Lógica de consumo de APIs (fetch).
+- `src/mocks`: Configuración de MSW y handlers para simular respuestas.

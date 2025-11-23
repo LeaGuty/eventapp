@@ -2,6 +2,10 @@
 
 Este proyecto es una aplicación web desarrollada con **React** y **Vite**, diseñada específicamente para practicar la integración de un Frontend con servicios de Backend.
 
+## Despliegue
+
+Puedes ver la aplicación funcionando aquí: [https://LeaGuty.github.io/eventapp/](https://LeaGuty.github.io/eventapp/)
+
 ## Descripción
 
 El objetivo principal de esta aplicación es simular un entorno real de desarrollo donde el frontend consume datos de diferentes APIs. Para fines de práctica y desarrollo autónomo, se utiliza **MSW (Mock Service Worker)** para interceptar las peticiones de red y devolver datos simulados, permitiendo trabajar sin un backend real desplegado.
